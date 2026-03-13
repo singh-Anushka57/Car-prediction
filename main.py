@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 
-@app.on_event("startup")
+@app.on_event("startup")#to start the event immediately
 def startup_event():
     load_artifacts()
 
